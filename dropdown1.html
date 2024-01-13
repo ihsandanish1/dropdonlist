@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar {
+            width: 60%;
+            height: 50px;
+            background-color: black;
+            margin: 0px auto;
+       }
+        .navbar ul {
+            width: 90%;
+            list-style-type: none;
+            display: flex;
+        }
+
+        .navbar ul li ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar ul li {
+            top: 20px;
+            width: 90px;
+            border: 1px solid #fff;
+            text-align: center;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            line-height: 50px;
+            display: block;
+        }
+
+        .navbar ul li:hover ul li {
+            display: block;
+        }
+
+
+
+        .navbar ul li a:hover {
+            background-color: aqua;
+            color: black;
+            display: block;
+        }
+
+        .navbar ul li ul li {
+            background-color: black;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="">home<i class="ri-arrow-down-s-line"></i></a></li>
+            <li>
+                <a href="">about<i class="ri-arrow-down-s-line"></i></a>
+                <ul>
+                    <li><a href="">about</a></li>
+                    <li><a href="">contact</a></li>
+                    <li><a href="">list</a></li>
+                    <li><a href="">style</a></li>
+                </ul>
+            </li>
+            <li><a href="">contact<i class="ri-arrow-down-s-line"></i></a></li>
+            <li><a href="">address<i class="ri-arrow-down-s-line"></i></a>
+                <ul>
+                    <li><a href="">about</a></li>
+                    <li><a href="">contact</a></li>
+                    <li><a href="">list</a></li>
+                    <li><a href="">style</a></li>
+                    <li><a href="">table</a></li>
+                </ul>
+            </li>
+            <li><a href="">services <i class="ri-arrow-down-s-line"></i></a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
